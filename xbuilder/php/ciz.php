@@ -1,5 +1,10 @@
 <?php
 
+
+if (!defined('tututtoken-OMGOMGOMGIMSKINTSTIWWWWWTFFFFF-yo')) {
+    die('Direct access not permitted');
+}
+
 function return_bytes($val) {
     $last = strtolower($val[strlen($val)-1]);
     $int = preg_replace('/[^0-9]/', '', $val);

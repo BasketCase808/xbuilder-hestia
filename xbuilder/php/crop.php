@@ -63,7 +63,7 @@ if (isset($url) && !empty($url)){
 	if ($im2 !== FALSE) {
 	    $tmpdir = "../temp/";
 	    if (!file_exists($tmpdir)){
-	        mkdir($tmpdir, 0777);
+	        mkdir($tmpdir, 0755);
 	    }
 		switch ($ext) {
 		case ".png":

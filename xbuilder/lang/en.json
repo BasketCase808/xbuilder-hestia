@@ -33,7 +33,7 @@
     "notValidHtml": "HTML Code is not Valid",
     "notValidCss": "One of CSS Files is not Valid",
     "editorDisabledTitle": "VISUAL EDITING IS BLOCKED",
-    "editorDisabledDescription": "There are several validation errors in the code used on this page. You should dive into the code to fix the problem yourself.",
+    "editorDisabledDescription": "There are several validation errors in the code used on this page. You should dive into the code to fix the problem yourself - SAVE YOUR WORK. REOPEN THE PAGE IN ANOTHER TAB. IF CHANGES HAVENT SAVED. COME BACK HERE, SAVE AGAIN THEN RELOAD THE OTHER TAB, REPEAT UNTIL CHANGES REFLECT..",
     "editorDisabledButtonText": "CLICK TO OPEN CODE EDITOR"
   },
   "editor": {

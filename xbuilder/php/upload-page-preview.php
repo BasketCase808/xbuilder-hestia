@@ -13,9 +13,9 @@ if (isset($_POST["dir"]) && isset($_POST["path"])){
     $targetName = preg_replace("/\s+/", "-", mb_convert_case($path_info["filename"], MB_CASE_LOWER, "UTF-8"));
     $ext = "." . $path_info["extension"];
 
-    if(!in_array($ext, array('.jpeg', '.jpg', '.png'))) {
+    if(!in_array($ext, array('.jpeg', '.jpg', '.png', 'webp'))) {
             http_response_code("406");
-            echo "The wrong file format is selected. Only . jpg, .png formats are supported.";
+            echo "Wrong file format selected. Only .jpg, .png and .webp formats are supported.";
             exit();
     }
 

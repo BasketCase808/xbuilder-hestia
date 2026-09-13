@@ -40,7 +40,7 @@ function saveProject($project)
     if (isset($projectObj) && $projectObj != "null") {
         $dir = "../" . $projectObj["dir"];
         if (!file_exists($dir)) {
-            mkdir($dir, 0777);
+            mkdir($dir, 0755);
         }
         $files    = scandir($dir);
         $fileWhitelist = array("project.json", "sitemap.xml", "robots.txt");
@@ -87,7 +87,7 @@ function saveProject($project)
         }
 
         if (!file_exists($dir . "elements")){
-            mkdir($dir . "elements", 0777);
+            mkdir($dir . "elements", 0755);
         }
 
         if (isset($projectObj["presets"])) {

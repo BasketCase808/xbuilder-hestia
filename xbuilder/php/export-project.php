@@ -8,7 +8,7 @@
         $destination = '../temp/' . $project_name . '.zip';
 
         if (!file_exists("../temp/")) {
-          mkdir("../temp/", 0777);
+          mkdir("../temp/", 0755);
         }
 
         if (file_exists($destination)){

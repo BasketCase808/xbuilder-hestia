@@ -1,6 +1,6 @@
 <?php
 
-$default_recipients = 'support@novibuilder.com';
+$default_recipients = 'support@tutut.uk';
 
 try {
     require './phpmailer/PHPMailerAutoload.php';
@@ -52,12 +52,12 @@ try {
     $mail = new PHPMailer();
     $mail->From = $_POST['email'];
 
-    # Attach file
-    if (isset($_FILES['file']) &&
-        $_FILES['file']['error'] == UPLOAD_ERR_OK) {
-        $mail->AddAttachment($_FILES['file']['tmp_name'],
-                             $_FILES['file']['name']);
-    }
+    // # Attach file
+    // if (isset($_FILES['file']) &&
+    //     $_FILES['file']['error'] == UPLOAD_ERR_OK) {
+    //     $mail->AddAttachment($_FILES['file']['tmp_name'],
+    //                          $_FILES['file']['name']);
+    // }
 
     if (isset($_POST['name'])){
         $mail->FromName = $_POST['name'];
