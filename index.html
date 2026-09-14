@@ -14,7 +14,9 @@
     <!-- Forwarding with dynamic timestamp to bypass redirect target caching -->
     <meta http-equiv="refresh" content="3; url=/xbuilder">
     <script>
-        window.location.href = "/xbuilder?_t=" + Date.now();
+        setTimeout(function() {
+            window.location.href = "/xbuilder?_t=" + Date.now();
+        }, 3000);
     </script>
 
     <style>
